@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaplan Task</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="content col-md-6"></div>
+                    <h3>Show Post</h3>
+                    <table class="table table-bordered table-hover" id="list">
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <h3>Create Post</h3>
+                <form class="form-horizontal" action="javascript:void(0);" method="POST" onsubmit="add()" id="myForm">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="name">Name:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="des">Description:</label>
+                      <div class="col-sm-10">
+                        <textarea  class="form-control" id="des" > </textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-10">
+                        <input  type="submit" value="Submit" id="submit" class="btn btn-primary" />
+                      </div>
+                    </div>
+                  </form>
+            </div>
+          </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
